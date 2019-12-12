@@ -9,7 +9,6 @@ from qiskit.ignis.measurement.discriminator.iq_discriminators import (
 )
 from qiskit.result import Result
 from qiskit.pulse.schedule import Schedule
-from sklearn.svm import SVC
 
 
 class SklearnIQDiscriminator(IQDiscriminationFitter):

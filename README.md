@@ -49,7 +49,7 @@ used in the analysis.
 
 512 shots were performed for each of 101 frequence steps.
 
-* Notebook: [Measure X and K using OpenPulse.ipynb](./notebooks/Measure X and K using OpenPulse.ipynb)
+* Notebook: [Measure X and K using OpenPulse.ipynb](./notebooks/Measure%20X%20and%20K%20using%20OpenPulse.ipynb)
 * Saved results: [xk_results](./notebooks/xk_results/)
 
 ### Improved classification of IQ values

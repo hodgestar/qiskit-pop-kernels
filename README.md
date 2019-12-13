@@ -87,6 +87,8 @@ The new SVC discriminator was compared to the existing linear and
 quadratic discriminators and found to offer a slight deduction in measurement
 errors.
 
+We have opened a PR for qiskit-ignis to add the new discriminator.
+
 * Notebook (comparison of regularization values): [sklearn_discriminators.ipynb](./notebooks/sklearn_discriminators.ipynb)
 * Notebook (comparison with existing discriminators): [sklearn_discriminators_extension.ipynb](./notebooks/sklearn_discriminators_extension.ipynb)
 * Notebook (for generating results): [armonk.ipynb](./notebooks/armonk.ipynb)
@@ -97,16 +99,29 @@ errors.
 
 ## What we learned
 
+* A lot of OpenPulse!
 * Measurement pulses
-* OpenPulse
-* Understand qubit measurement and pulse control.
+* Integrating voltage readings to generate IQ values using kernels.
+* What IQ discriminators are.
 
 <a id="future-work"></a>
 
 ## Future work
 
-* Investigate improved kernels
-* Investigate multi-qubit measurement discriminators
+* **Investigate improved kernels**: We would have loved to be able to
+  investigate the effect of different kernels on the separability of
+  IQ values, and in particular, in be able to determine which
+  measurements might have given invalid results. Unfortunately no
+  IBM Q systems currently support measurement level 0 (i.e. reading the
+  unintegrated voltage values), so this has to remain future work.
+
+  In particular, it would be interesting to see if the shape of the
+  path mapped out on the IQ plane during the reading of the measurement
+  pulse might allow determining which measurements unusual paths.
+
+* **Investigate multi-qubit measurement discriminators**: Measuring
+  multiple qubits at once provides the possibility of better
+  discriminating between measurements.
 
 <a id="repository-guide"></a>
 

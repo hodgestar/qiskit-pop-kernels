@@ -9,6 +9,7 @@ The goal of this project is to understand and characterise this pipeline.
 
 * [Qiskit Camp Africa 2019](https://github.com/qiskit-community/qiskit-camp-africa-19/)
 * Hackathon Team [#23](https://github.com/qiskit-community/qiskit-camp-africa-19/issues/23)
+* Presentation: [prezi.com](https://prezi.com/p/e_valentgk5c/)
 
 Contents:
 

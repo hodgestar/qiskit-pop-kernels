@@ -10,12 +10,38 @@ The goal of this project is to understand and characterise this pipeline.
 * [Qiskit Camp Africa 2019](https://github.com/qiskit-community/qiskit-camp-africa-19/)
 * Hackathon Team [#23](https://github.com/qiskit-community/qiskit-camp-africa-19/issues/23)
 
-## Our results
+Contents:
 
-1. **freq scan**
+* [What we did](#what-we-did)
+* [Repository guide](#repository-guide)
 
-2. **X and K**
+<a id="what-we-did">
+## What we did
 
-3. Kernels
+### Evaluate measurement performance as a function of measurement pulse frequency
 
-4. **improved discriminators**
+* Understand qubit measurement and pulse control.
+* Investigation of measurement performance as a function of measurement pulse frequency.
+
+### Characterise X and K qubit parameters
+
+* Characterisation of X and K for a qubit.
+
+### Improved classification of IQ values
+
+* Created improved discriminators.
+* PR: https://github.com/Qiskit/qiskit-ignis/pull/316
+
+<a id="repository-guide">
+## Repository guide:
+
+* [notebooks](./notebooks): Jupyter notebooks and experiment results.
+* [papers](./papers): PDFs of relevant papers.
+* [pkgs](./pkgs): Custom builds of Qiskit packages needed for pulse control.
+* [pop_kernels](./pop_kernels): Python package containing the new IQ discriminators.
+* Other:
+
+  * [measurement-kernels-23.pdf](./measurement-kernels-23.pdf): PDF of the
+    original hackathon issue (used for sharing while the WiFi was spotty).
+  * [theory-notes.rst](./theory-notes.rst): Some notes from Nick's
+    lecture on X, K and the IQ plane.

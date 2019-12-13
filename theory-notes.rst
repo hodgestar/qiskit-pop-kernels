@@ -1,5 +1,5 @@
-Measurement Kernels
-===================
+Theory notes
+============
 
 Figuring out X and K parameters
 -------------------------------

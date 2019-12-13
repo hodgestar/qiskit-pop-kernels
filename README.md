@@ -47,12 +47,45 @@ used in the analysis.
 
 ### Characterise X and K qubit parameters
 
-512 shots were performed for each of 101 frequence steps.
+We used pulse control to determine the X and K values of the ibmq_armonk
+qubit.
+
+By scanning the measurement frequency across the optimal value, we determined
+the shape of the peak of the IQ magnitude for both ``|0>`` and ``|1>`` states.
+
+X is half the separation between the two peaks and was measured to be
+``2.1297e-05 GHz``.
+
+K is the average full-width at half maximum of the two peaks and was
+measured to be ``1.8751 GHz``.
+
+The notebook includes options to simulate the frequency peaks using either
+Gaussian or Lorentzians. Experimental peaks are fitted with Lorentzians
+using ``scipy``'s ``curve_fit`` function.
+
+512 shots were performed for each of 101 frequency steps.
 
 * Notebook: [Measure X and K using OpenPulse.ipynb](./notebooks/Measure%20X%20and%20K%20using%20OpenPulse.ipynb)
 * Saved results: [xk_results](./notebooks/xk_results/)
 
 ### Improved classification of IQ values
+
+The qiskit-ignis package currently includes linear and quadratic discriminators.
+
+We investigated the possibility of using more sophisticated classifiers, and
+in particular, ``sklearn.svm.SVC``, an SVM-based classifier provided by sklearn.
+
+We fitted the discriminators to measurements obtained of the ``|0>`` and
+``|1>`` states on ``ibmq_armonk``.
+
+Various SVC kernels were tried, and the ``rbf`` (radial basis function)
+kernel was determined give the best separation and to be the most robust.
+
+Various values of the SVC regularization parameter ``C`` were compared.
+
+The new SVC discriminator was compared to the existing linear and
+quadratic discriminators and found to offer a slight deduction in measurement
+errors.
 
 * Notebook (comparison of regularization values): [sklearn_discriminators.ipynb](./notebooks/sklearn_discriminators.ipynb)
 * Notebook (comparison with existing discriminators): [sklearn_discriminators_extension.ipynb](./notebooks/sklearn_discriminators_extension.ipynb)

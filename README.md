@@ -15,7 +15,8 @@ Contents:
 * [What we did](#what-we-did)
 * [Repository guide](#repository-guide)
 
-<a id="what-we-did">
+<a id="what-we-did"></a>
+
 ## What we did
 
 ### Evaluate measurement performance as a function of measurement pulse frequency
@@ -32,7 +33,8 @@ Contents:
 * Created improved discriminators.
 * PR: https://github.com/Qiskit/qiskit-ignis/pull/316
 
-<a id="repository-guide">
+<a id="repository-guide"></a>
+
 ## Repository guide:
 
 * [notebooks](./notebooks): Jupyter notebooks and experiment results.

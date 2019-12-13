@@ -8,7 +8,7 @@ as a particular measurement outcome.
 The goal of this project is to understand and characterise this pipeline.
 
 * [Qiskit Camp Africa 2019](https://github.com/qiskit-community/qiskit-camp-africa-19/)
-* Hackathon Team [&hash;23](https://github.com/qiskit-community/qiskit-camp-africa-19/issues/23)
+* Hackathon Team [#23](https://github.com/qiskit-community/qiskit-camp-africa-19/issues/23)
 
 ## Our results
 

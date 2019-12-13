@@ -40,19 +40,25 @@ one with a qubit in the ``|1>`` state and one with the ``|0>`` rotate by
 90 degrees about the X axis ``|0> - i|1> ``. The third schedule was not
 used in the analysis.
 
-512 shots were performed.
+512 shots were performed for each of 11 frequency steps.
 
 * Notebook: [measurement_freq_experiments.ipynb](./notebooks/measurement_freq_experiments.ipynb)
 * Saved results: [ibmq_armonk_measurement_freq_experiment.pickle](./notebooks/ibmq_armonk_measurement_freq_experiment.pickle)
 
 ### Characterise X and K qubit parameters
 
-* Characterisation of X and K for a qubit.
+512 shots were performed for each of 101 frequence steps.
+
+* Notebook: [Measure X and K using OpenPulse.ipynb](./notebooks/Measure X and K using OpenPulse.ipynb)
+* Saved results: [xk_results](./notebooks/xk_results/)
 
 ### Improved classification of IQ values
 
-* Created improved discriminators.
-* PR: https://github.com/Qiskit/qiskit-ignis/pull/316
+* Notebook (comparison of regularization values): [sklearn_discriminators.ipynb](./notebooks/sklearn_discriminators.ipynb)
+* Notebook (comparison with existing discriminators): [sklearn_discriminators_extension.ipynb](./notebooks/sklearn_discriminators_extension.ipynb)
+* Notebook (for generating results): [armonk.ipynb](./notebooks/armonk.ipynb)
+* Saved results: [ibmq_armonk_results.pickle](./notebooks/ibmq_armonk_results.pickle)
+* qiskit-ignis PR to add SklearnIQDiscriminator: https://github.com/Qiskit/qiskit-ignis/pull/316
 
 <a id="what-we-learned"></a>
 
@@ -66,7 +72,8 @@ used in the analysis.
 
 ## Future work
 
-### Investigating improved kernels
+* Investigate improved kernels
+* Investigate multi-qubit measurement discriminators
 
 <a id="repository-guide"></a>
 
